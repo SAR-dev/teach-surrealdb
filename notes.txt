@@ -1,0 +1,5 @@
+Multiple concurrent run script
+
+"dev:client": "react-router dev",
+"dev:db": "surreal start -u root -p root rocksdb://db",
+"dev": "npm-run-all --parallel dev:db dev:client"
